@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="alert alert-secondary text-center">
+        <h1>ALL POSTS</h1>    
+    </div>
+        
+    <table class="table table-bordered">
+        <thead class="bg-dark text-center">
+        <tr class="text-white">          
+            <th>Title</th>
+            <th>Description</th>
+            <th>Status</th>
+            <th>Comments Allowed</th>
+            <th>Category</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody class="text-center">
+        {{#each list}}
+            <tr>               
+                <td>{{title}}</td>
+                <td>{{this.description}}</td>
+                <td>{{this.status}}</td>
+                <td>{{this.allowComments}}</td>
+                <td>{{category_title}}</td>
+                <td class="d-flex">
+                    <a href="/admin/posts/edit/{{this._id}}" class="btn btn-sm btn-warning mr-2">Edit Post</a>
+                    <a href="/admin/posts/delete/{{this._id}}" class="btn btn-sm btn-danger">Delete Post</a>
+                    
+                </td>
+            </tr>    
+        {{/each}}
+        
+        </tbody>
+    </table>
+    
+    
+</div>
