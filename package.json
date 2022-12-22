@@ -18,7 +18,7 @@
     "flash": "^1.1.0",
     "handlebars": "^4.5.3",
     "http-errors": "~1.6.3",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "mkdirp": "^1.0.4",
     "mongodb": "^3.5.7",
     "mongoose": "^5.9.13",
